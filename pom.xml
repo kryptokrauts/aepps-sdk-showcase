@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.kryptokrauts</groupId>
+	<artifactId>aepps-sdk-showcase</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Showcase Aepp to demonstrate the features of the Aeternity Java SDK</name>
+	
+	<developers>
+		<developer>
+			<organization>kryptokrauts.com</organization>
+			<id>mitch-lbw</id>
+			<name>Michel Meier</name>
+			<email>dna.fan@gmx.de</email>
+		</developer>
+		<developer>
+			<organization>kryptokrauts.com</organization>
+			<id>marc0olo</id>
+			<name>Marco Walz</name>
+			<email>walz.marcoo@gmail.com</email>
+		</developer>
+	</developers>
+	<modules>
+		<module>aepps-sdk-showcase-backend</module>
+	</modules>
+	
+</project>

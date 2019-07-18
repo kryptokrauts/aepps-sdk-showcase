@@ -1,0 +1,2 @@
+rootProject.name = 'aepps-sdk-showcase'
+include 'aepps-sdk-showcase-backend'

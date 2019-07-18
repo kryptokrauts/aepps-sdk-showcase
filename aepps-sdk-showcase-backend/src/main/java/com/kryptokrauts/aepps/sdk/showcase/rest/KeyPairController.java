@@ -46,12 +46,12 @@ public class KeyPairController {
   }
 
   @GetMapping(path = "/recover")
-  public BaseKeyPair recoverKeyPairFromPrivateKey(@RequestParam String privateKey) {
+  public BaseKeyPair recoverFromPrivateKey(@RequestParam String privateKey) {
     return keyPairService.generateBaseKeyPairFromSecret(privateKey);
   }
 
-  @GetMapping(path = "/recoverByMnemonic")
-  public List<BaseKeyPair> recoverKeyPairsFromMnemonic(@RequestParam List<String> mnemonic,
+  @GetMapping(path = "/recoverFromMnemonic")
+  public List<BaseKeyPair> recoverFromMnemonic(@RequestParam List<String> mnemonic,
       @RequestParam int numberOfKeyPairs,
       @RequestParam Optional<String> password)
       throws AException {

@@ -28,11 +28,11 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.kryptokrauts</groupId>
-			<artifactId>aepp-sdk-java</artifactId>
-			<version>${aepp.sdk.java.version}</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.kryptokrauts</groupId> -->
+<!-- 			<artifactId>aepp-sdk-java</artifactId> -->
+<!-- 			<version>${aepp.sdk.java.version}</version> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -46,6 +46,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.bitcoinj</groupId>
+			<artifactId>bitcoinj-core</artifactId>
+			<version>0.14.7</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 

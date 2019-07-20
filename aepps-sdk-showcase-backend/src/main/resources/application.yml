@@ -1,0 +1,4 @@
+serviceconfig:
+  local:
+    baseUrl: freekey
+    contractBaseUrl: https://node.io

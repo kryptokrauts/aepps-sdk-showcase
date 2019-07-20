@@ -1,23 +1,28 @@
 <template>
-  <footer class="footer">
-    <span>
-      <p>
-        © 2019 - made with ❤️ by
-        <a href="https://kryptokrauts.com">
-          <img
-            alt="kryptokrauts.com"
-            src="../../assets/kryptokrauts.svg"
-            height="24px"
-            title="kryptokrauts.com"
-          />
-        </a>
-      </p>
-    </span>
-  </footer>
+  <v-footer app height="auto">
+    <v-card class="flex" flat tile>
+      <v-card-title class="green accent-1">
+        <strong class="subheading">
+          &copy;2019 -
+          <strong>kryptokrauts</strong>
+        </strong>
+
+        <v-btn v-for="icon in icons" :key="icon" class="mx-3" icon :href="icon.url" target="_blank">
+          <v-icon size="24px">{{ icon.icon }}</v-icon>
+        </v-btn>
+      </v-card-title>
+    </v-card>
+  </v-footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  data: () => ({
+    icons: [
+      { url: "https://twitter.com/kryptokrauts", icon: "fab fa-twitter" },
+      { url: "https://github.com/kryptokrauts", icon: "fab fa-github" }
+    ]
+  })
 };
 </script>

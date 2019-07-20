@@ -1,9 +1,13 @@
 <template>
-  <div id="app" @click="checkAvailableServices();">
+  <v-app>
     <Header />
-    <router-view />
+    <v-content>
+      <v-container fluid>
+        <router-view />
+      </v-container>
+    </v-content>
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -20,31 +24,9 @@ export default {
   methods: {
     ...mapActions(["checkAvailableServices"])
   },
-  updated() {
+  created() {
     this.checkAvailableServices();
   }
 };
 </script>
 
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.header,
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-.header a {
-  color: #43a047;
-  padding-right: 5px;
-}
-</style>

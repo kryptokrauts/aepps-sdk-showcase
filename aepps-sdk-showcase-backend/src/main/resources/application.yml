@@ -1,4 +1,6 @@
 serviceconfig:
-  local:
-    baseUrl: freekey
-    contractBaseUrl: https://node.io
+  envConfig:
+    baseUrl: http://aelocal/v2
+    compilerUrl: http://compiler.aelocal
+    baseKeyPair:
+      privateKey: 79816BBF860B95600DDFABF9D81FEE81BDB30BE823B17D80B9E48BE0A7015ADF 

@@ -6,7 +6,7 @@
           &copy;2019 -
           <strong>kryptokrauts</strong>
         </strong>
-
+        <v-spacer></v-spacer>
         <v-btn v-for="icon in icons" :key="icon" class="mx-3" icon :href="icon.url" target="_blank">
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
